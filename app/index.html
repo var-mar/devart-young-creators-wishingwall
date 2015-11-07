@@ -1,0 +1,187 @@
+<!-- 
+Project done as part Devart Google project by artist: Varvara Guljajeva and Mar Canet (2014-2015)
+More info about authors: http://www.var-mar.info
+ -->
+<html>
+  <header>
+    <title>Animate with code :: Varvara Guljajeva and Mar Canet</title>
+
+    <!-- Google font -->
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Roboto:400,100">
+
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Bitter">
+
+    <link rel="stylesheet" href="css/general.css"/>
+    <link rel="stylesheet" href="css/sandbox.css"/>
+    <link rel="stylesheet" href="css/toastr.min.css"/>
+
+    <!-- External Libraries  -->
+    <script src="js/libs/ace/ace.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/libs/jquery-1.11.0.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/libs/toastr.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/jscolor.js" type="text/javascript"></script>
+    <script src="js/dragend.js" type="text/javascript" charset="utf-8"></script>
+
+    <!-- Scripts -->
+    <script src="js/comunication.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/main_sandbox.js" type="text/javascript" charset="utf-8"></script>
+  </header>
+
+  <body>
+    
+    <div class="container"> 
+        <div class="containerHP shadow">
+        	<div id="help-div" class="hidden_help">
+
+            <div class="dragend-page">
+                <div class="step">
+                    <h1>Animate with Code</h1>
+                    <h2>1. Create a new butterfly.</h2>
+                    <p>Write the following line of code to create a new butterfly:</p>
+                    <p class="method">myButterfly = new butterfly();</p>
+                    <p class="pressRun">Press RUN to compile your code</p>
+                    <p><a href="javascript:resetCode()" class="linkDefaultCode">RESET</a> / <a href="javascript:nextSlideHelp()" class="linkDefaultCode">NEXT</a></p>
+                </div>
+            </div>
+
+            <div class="dragend-page">
+                <div class="step">
+                    <h2>2. Set a colour</h2>
+                    <p>Choose a colour for your butterfly using the Colour Picker below. Once selected copy the number into the second line of code, after the #, like in the example below.</p>
+                    <p class="method">myButterfly.setHexColor('#FF0000');</p>
+                    <p>Click Colour Picker below to open</p>
+                    <input id="colorPicker"  value="e92574">
+                    <!-- class="color" -->
+                    <p class="pressRun">Press RUN to compile your code</p>
+                    <p><a href="javascript:backSlideHelp()" class="linkDefaultCode" class="linkDefaultCode">BACK</a> / <a href="javascript:nextSlideHelp()" class="linkDefaultCode">NEXT</a></p>
+                </div>
+            </div>
+
+            <div class="dragend-page">
+                <div class="step">
+                    <h2>3. Set a scale</h2>
+                    <p>Scale refers to the size of an object. The number in brackets is the number that original size of the butterfly  will be multiplied by. For example an input of (5) will make butterfly 5 times bigger.</p>
+                    <p class="method">myButterfly.setScale(5);</p>
+                    <p class="pressRun">Press RUN to compile your code</p>
+                    <p><a href="javascript:backSlideHelp()" class="linkDefaultCode">BACK</a> / <a href="javascript:nextSlideHelp()" class="linkDefaultCode">NEXT</a></p>
+                </div>
+            </div>
+
+            <div class="dragend-page">
+                <div class="step">
+                    <h2>4. Set a shape</h2>
+                    <p>Setting a shape will give your butterfly a different wing pattern. Input a number between 1-5. Try all the numbers to see which one you like the most.</p>
+                    <p class="method">myButterfly.setShapeModel(2);</p>
+                    <p class="pressRun">Press RUN to compile your code</p>
+                    <p><a href="javascript:backSlideHelp()" class="linkDefaultCode">BACK</a> / <a href="javascript:nextSlideHelp()" class="linkDefaultCode">NEXT</a></p>
+                </div>
+            </div>
+            
+            <div class="dragend-page">
+                <div class="step">
+                    <h2>5. Set a speed</h2>
+                    <p>0 is no speed and 1 is the fastest. Input a speed between 0 and 1. Then select a decimal number, such as 0.01, to see what effect this has.</p>
+                    <p class="method">myButterfly.setSpeed(0.01);</p>
+                    <p class="pressRun">Press RUN to compile your code</p>
+                    <p><a href="javascript:backSlideHelp()" class="linkDefaultCode">BACK</a> / <a href="javascript:nextSlideHelp()" class="linkDefaultCode">NEXT</a></p>
+                </div>
+            </div>
+
+            <div class="dragend-page">
+                <div class="step">
+                    <h2>6. Set a fly mode</h2>
+                    <p>Setting the fly mode changes the spread of the wings. Input a number between 1 and 3. Input 1 for the wings to touch and 3 for the wings to be furthest apart.</p>
+                    <p class="method">myButterfly.setFlyMode(3);</p>
+                    <p class="pressRun">Press RUN to compile your code</p>
+                    <p><a href="javascript:backSlideHelp();" class="linkDefaultCode">BACK</a> / <a href="javascript:nextSlideHelp()" class="linkDefaultCode">NEXT</a></p>
+                </div>
+            </div>
+
+            <div class="dragend-page">
+                <div class="step">
+                    <h2>7. Set a position</h2>
+                    <p>Set the position of your butterfly in the 3D space. Input a value between 1 and 10 for each axis: The x-axis co-ordinate can change the position of the butterfly left or right; the y-axis up and down and the z-axis backwards or forwards.</p>
+                    
+                    <p class="method">myButterfly.setPosition(x,y,z);</p>
+                    <p class="pressRun">Press RUN to compile your code</p>
+                    <p><a href="javascript:backSlideHelp();" class="linkDefaultCode">BACK</a> / <a href="javascript:nextSlideHelp()" class="linkDefaultCode">NEXT</a></p>
+                </div>
+            </div>
+
+            <div class="dragend-page">
+                <div class="step">
+                    <h2>8. Set a rotation</h2>
+                    <p>Setting the rotation of your butterfly in the 3D space. Keep the first and third numbers (x and z co-ordinates) set to 0, and only change the angle for the middle number (y co-ordinate), so that more of the wings are visible.</p>
+                    <p class="method">myButterfly.setRotation(0,Math.radians(90),0);</p>
+                    <p class="pressRun">Press RUN to compile your code</p>
+                    <p><a href="javascript:backSlideHelp();" class="linkDefaultCode">BACK</a> / <a href="javascript:nextSlideHelp()" class="linkDefaultCode">NEXT</a></p>
+                </div>    
+            </div>
+
+            <div class="dragend-page">
+                <div class="step">
+                    <h2>9. Add more butterflies</h2>
+                    <p>You can make more than one butterfly by copying the code from lines 1 - 8, and pasting it on a new line. Once pasted add '2' to instanceName  to ‘myButterfly2’.</p>
+                    <p class="method">myButterfly2 = new butterfly();</p>
+                    <p>At first you won’t see the new butterfly. You must change the position of the second butterfly to uncover it from underneath the first. <a href="javascript:dragend.jumpToPage(7);" class="linkDefaultCode2">Go back to 7 Set a position</a>.</p>
+                    <p class="pressRun">Press RUN to compile your code</p>
+                    <p><a href="javascript:backSlideHelp();" class="linkDefaultCode">BACK</a> / <a href="javascript:nextSlideHelp()" class="linkDefaultCode">NEXT</a></p>
+                </div>    
+            </div>
+
+            <div class="dragend-page">
+                <div class="step">
+                    <h2>10. Create a GIF of your butterfly</h2>
+                    <p>When you’re happy with your butterfly animation you can save it as a GIF.</p>
+                    <p></p>
+                    <p><a href="javascript:sendRecord();"  class="linkDefaultCode">CREATE AND DOWNLOAD GIF</a></p>
+                    <p></p>
+                    <p><a href="javascript:restartTutorial();" class="linkDefaultCode">RESTART</a> / <a href="javascript:backSlideHelp()" class="linkDefaultCode">BACK</a> </p>
+                </div>
+            </div>
+
+            <br><br>
+            <br><br>
+            <p></p>
+          </div>
+          <div id="editor-div" class="hidden_help">
+            <div id="editor"></div>
+            <div id="inner">
+                <input type="button" value="Run" id='submit1' class="runButton"></input>
+
+            </div>
+          </div>
+
+            <iframe id="render-iframe" src="render.html"></iframe>
+            <div id="fullscreenButton" onMouseDown="javascript:changeToFullscreen()">
+                <img src="imgs/open.png" style="width:30px;height:26px" id="fullscreenButton-img" alt="Set fullscreen">
+            </div>
+        </div>
+    </div>
+    <div id="about">
+
+        <div id="about_center">
+            <div id="about_container">
+                <div class="about_info"><a class="link_about" href="javascript:openAboutProjectPage()">About the art project</a></div> 
+                <div class="about_info"> | </div>
+                <div class="about_info"><a class="link_about" href="javascript:openAboutArtistPage()">About the artists</a></div>
+            </div>
+        </div>
+    </div>
+    <div id="videoProject">
+    </div>
+    <div id="videoPage" style="display:none">
+        <div id="closeInfoButton"><a href="#" onClick="javascript:closeAboutPage();"><img src="imgs/close_page.png" class="icon"></a></div>
+        <div class="videoPage_centerVertical">
+            <div id="videoPage_project" class="videoPage_centerHorizontal">
+                <div id="videoPage_title"></div>
+                <iframe id="movie_player" width="854" height="500" src="" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+  </body>
+</html>
+
+
+

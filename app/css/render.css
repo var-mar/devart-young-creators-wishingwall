@@ -1,0 +1,78 @@
+body {
+	color: #eaeaea;
+	font-family:Monospace;
+	font-size:13px;
+	text-align:center;
+	vertical-align: middle;
+	background-color: #FFFFFF;
+	margin: 0px;
+	overflow: hidden;
+	font-family:'Roboto',sans-serif;
+	font-size:1.5em;
+	font-weight: lighter;
+}
+
+#info {
+	position: absolute;
+	top: 0px; width: 100%;
+	padding: 5px;
+}
+
+#canvas {
+	display:none;
+}
+
+#threejs {
+	width:1366px;
+	height:768px;
+}
+
+#rendering{
+	height:768px;
+	width:100%;
+	background-color: #838485;
+	line-height:768px;
+}
+
+#rendering-label{
+	
+}
+
+@keyframes blink {
+    0% {
+           color: rgba(255,255,255,1)
+    }
+    50% {
+           color: rgba(255,255,255,0.5)
+    }
+    100% {
+           color: rgba(255,255,255,1)
+    }
+}
+@-webkit-keyframes blink {
+    0% {
+           color: rgba(255,255,255,1)
+    }
+    50% {
+           color: rgba(255,255,255,0.5)
+    }
+    100% {
+           color: rgba(255,255,255,1)
+    }
+}
+
+.generatedGif {
+    -moz-transition:all 0.5s ease-in-out;
+    -webkit-transition:all 0.5s ease-in-out;
+    -o-transition:all 0.5s ease-in-out;
+    -ms-transition:all 0.5s ease-in-out;
+    transition:all 0.5s ease-in-out;
+    -moz-animation:blink normal 1.5s infinite ease-in-out;
+    /* Firefox */
+    -webkit-animation:blink normal 1.5s infinite ease-in-out;
+    /* Webkit */
+    -ms-animation:blink normal 1.5s infinite ease-in-out;
+    /* IE */
+    animation:blink normal 1.5s infinite ease-in-out;
+    /* Opera */
+}

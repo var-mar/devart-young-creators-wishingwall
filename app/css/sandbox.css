@@ -1,0 +1,341 @@
+html,body
+{
+    height: 100%;
+}
+
+body {
+    overflow: hidden;
+    
+    /*
+    background-image:url('../imgs/geometry2.png');
+    background-repeat:repeat;
+    */
+    background-color: #FFFFFF;
+    
+    /*font-family: 'Bitter', serif;*/
+    display: table; 
+    margin: 0 auto; 
+}
+
+p {
+    font-weight: lighter;
+}
+
+h1 {
+     color: #ffffff;
+     font-weight: lighter;
+}
+
+h2 {
+    color: #000000;
+    font-weight: lighter;
+}
+
+.linkDefaultCode{
+    color: #fff;
+    text-decoration: none;
+    cursor:pointer !important;
+}
+
+.linkDefaultCode:hover, .linkDefaultCode:focus {
+  text-decoration: underline overline;
+}
+
+.linkDefaultCode2 {
+    color: #fff;
+    text-decoration: none;
+    cursor:pointer !important;
+}
+
+.linkDefaultCode2:hover, .linkDefaultCode:focus {
+  text-decoration: underline;
+}
+
+#about {
+  position:absolute;
+  top:0px;
+  left:0px;
+  width:100%;
+  font-weight: lighter;
+  font-family:'Roboto',sans-serif;
+}
+
+#about_center {
+  position:relative;
+  height:30px;
+  width:1366px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#about_container {
+  position:absolute;
+  padding: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  left:900px;
+  width:315px;
+  background-color:rgba(219, 215, 215, 0.6);
+  height:30px;
+  font-size:1.1em;
+}
+
+.about_info {
+  float:left;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.link_about {
+    color: #3c5add;
+    text-decoration: none;
+    cursor:pointer !important;
+}
+
+.link_about:hover, .link_about:focus {
+  text-decoration: underline overline;
+}
+
+#videoPage {
+  position: absolute;
+  left:0px;
+  top:0px;
+  width:100%;
+  height:100%;
+  background-color:rgba(235, 235, 235, 0.95);
+  z-index: 9000;
+  display: table;
+  overflow-y: scroll;
+}
+
+.videoPage_centerVertical{
+  display: table-cell;
+  vertical-align: middle;
+}
+.videoPage_centerHorizontal{
+  position: relative;
+  left: -350px;
+  transform: translateX(50%);
+}
+
+.videoPage_title{
+  font-weight: lighter;
+  font-family:'Roboto',sans-serif;
+  font-size:2.0em;
+  background-color: #cccccc;
+  width:844px;
+  padding: 5px;
+}
+
+#videoPage_title{
+  font-weight: lighter;
+  font-family:'Roboto',sans-serif;
+  font-size:1.5em;
+  background-color: #cccccc;
+  width:844px;
+  padding: 5px;
+}
+
+#videoCreators{
+  position: absolute;
+  left:0px;
+  top:0px;
+  z-index: 9001;
+}
+
+#closeInfoButton{
+  position: absolute;
+  right:50px;
+  top:50px;
+  
+}
+.icon{
+  height:35px;
+  width:35px;
+}
+
+
+.container {  
+  height: 100%;
+  display: table-cell;   
+  vertical-align: middle;    
+}
+
+.shadow {
+  -webkit-box-shadow: -9px 10px 13px -1px rgba(107,105,107,0.52);  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+  -moz-box-shadow:    -9px 10px 13px -1px rgba(107,105,107,0.52);  /* Firefox 3.5 - 3.6 */
+  box-shadow:         -9px 10px 13px -1px rgba(107,105,107,0.52);  /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
+}
+
+#css_version::-webkit-scrollbar {
+    width: 11px;
+}
+
+.visible_help {
+  visibility: visible;
+  opacity: 1;
+  /* When showing the content we only need to transition the
+     opacity, and everything else should be applied instantly */
+  -webkit-transition: opacity 0.5s linear;
+  -moz-transition: opacity 0.5s linear;
+  -o-transition: opacity 0.5s linear;
+  transition: opacity 0.5s linear;
+}
+
+.hidden_help {
+  visibility: hidden;
+  opacity: 0;
+  /* When hiding the content we should delay the transition
+     of the visibility value, so that it happens at the end
+     of the opacity transition. Note that even though it works
+     with visibility, the same trick doesn’t work with display,
+     position, or height (barring a fixed height). */
+  -webkit-transition: visibility 0s 1s, opacity 1s linear;
+  -moz-transition: visibility 0s 1s, opacity 1s linear;
+  -o-transition: visibility 0s 1s, opacity 1s linear;
+  transition: visibility 0s 1s, opacity 1s linear;
+}
+
+.step {
+    width:300px;
+    margin-left:20px;
+    margin-right:10px;
+    position:relative;
+    top:50%;
+    transform:translateY(-50%);
+}
+
+.pressRun {
+    margin-top:50px;
+    margin-bottom: 50px;
+    font-style: italic;
+}
+
+#help-div { 
+    position: relative;
+    margin: 0;
+    border:none;
+    float:left;
+    width:350px;
+    height:768px;
+    background-color:#929292;
+    overflow: scroll;
+    font-family:'Roboto',sans-serif;
+}
+
+#fullscreenButton{
+    position: relative; 
+    top: -25px;
+    right: -1px;
+    float:right;
+}
+
+#fullscreenButton:hover{
+    cursor: hand;
+}
+
+#editor-div { 
+    position: relative;
+    margin: 0;
+    border:none;
+    float:left;
+    width:400px;
+    height: 753px;
+    background-color:#222222;
+    padding-top: 15px;
+}
+
+#render-iframe { 
+    position: relative;
+    left:0px;
+    margin: 0;
+    border:none;
+    float:left;
+    width:616px;
+    height:100%;
+    height: 768px;
+}
+
+#editor {
+    position: relative;
+    top: 0;
+    left: 0;
+    margin: 0;
+    width:400px;
+    height: 400px;
+    line-height: 16px;
+    padding-top: 10px;
+    line-height: 20px;
+}
+
+#renderGif{
+    display:none;
+}
+
+.containerHP{
+    background-color:#222222;
+    margin:0 auto 0 auto;
+    width: 1366px;
+    height: 768px;
+    border:#000000 1px solid;
+    vertical-align: middle;  
+}
+
+#submit1 {
+    height: 40px;
+    width: 200px;
+    padding: 0 20px;
+}
+
+#inner {
+    width: 50%;
+    margin: 0 auto;
+}
+
+input.runButton{
+    cursor:pointer; /*forces the cursor to change to a hand when the button is hovered*/
+    padding:5px 25px; /*add some padding to the inside of the button*/
+    background:#ffffff; /*the colour of the button*/
+    border:1px solid #232222; /*required or the default border for the browser will appear*/
+    /*give the button curved corners, alter the size as required*/
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    /*give the button a drop shadow*/
+    -webkit-box-shadow: 0 0 4px rgba(0,0,0, .75);
+    -moz-box-shadow: 0 0 4px rgba(0,0,0, .75);
+    box-shadow: 0 0 4px rgba(0,0,0, .75);
+    /*style the text*/
+    color:#000000;
+    font-size:1.1em;
+}
+/***NOW STYLE THE BUTTON'S HOVER AND FOCUS STATES***/
+input.runButton:hover, input.runButton:focus{
+    background-color :#c9c6c6; /*make the background a little darker*/
+    /*reduce the drop shadow size to give a pushed button effect*/
+    -webkit-box-shadow: 0 0 1px rgba(0,0,0, .75);
+    -moz-box-shadow: 0 0 1px rgba(0,0,0, .75);
+    box-shadow: 0 0 1px rgba(0,0,0, .75);
+}
+
+#submit2 {
+     height: 100px;
+     width: 200px;
+}
+
+.method{
+    color:#ffffff;
+    /*padding-left: 5px;*/
+}
+
+#help-div * {
+  -webkit-user-select: none;  
+  -moz-user-select: none;    
+  -ms-user-select: none;      
+  user-select: none;
+  cursor:default;
+}
+
+#colorPicker{
+    cursor:auto;
+}

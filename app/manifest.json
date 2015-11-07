@@ -1,0 +1,20 @@
+{
+  "manifest_version": 2,
+  "name": "Young creators",
+  "version": "1",
+  "permissions": ["audioCapture","serial","http://*/","file:///*"],
+   "sandbox": {
+     "pages": ["help.html","editor.html","render.html"]
+  },
+  "icons": {
+    "16": "imgs/icon-16.png",
+    "24": "imgs/icon-24.png",
+    "128": "imgs/icon-128.png"
+  },
+  "app": {
+    "background": {
+      "scripts": ["js/main.js"]
+    }
+  },
+  "minimum_chrome_version": "27"
+}
